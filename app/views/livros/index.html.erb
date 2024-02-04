@@ -1,14 +1,21 @@
 <p style="color: green"><%= notice %></p>
+<div class="container">
 
-<h1>Livros</h1>
+    <h1>Livros</h1>
 
-<div id="livros">
-  <% @livros.each do |livro| %>
-    <%= render livro %>
-    <p>
-      <%= link_to "Show this livro", livro %>
-    </p>
-  <% end %>
+    <%= link_to "Novo livro", new_livro_path, class: "btn btn-primary" %>
+    <hr class="my-6">
+
+    <div id="livros">
+      <% @livros.each do |livro| %>
+        <%= render livro %>
+        <p>
+          <%= link_to "Abrir este livro", livro, class: "btn btn-primary" %>
+        </p>
+        <hr class="my-4">
+      <% end %>
+
 </div>
 
-<%= link_to "New livro", new_livro_path %>
+
+</div>

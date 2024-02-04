@@ -29,3 +29,10 @@
 
 en:
   hello: "Hello world"
+  create: "criar"
+  submit: "enviar"
+  helpers:
+    submit:
+      model_name:
+        create: "Criar"
+        update: "Atualizar"
